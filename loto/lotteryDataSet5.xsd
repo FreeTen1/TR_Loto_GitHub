@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="lotteryDataSet5" targetNamespace="http://tempuri.org/lotteryDataSet5.xsd" xmlns:mstns="http://tempuri.org/lotteryDataSet5.xsd" xmlns="http://tempuri.org/lotteryDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="lotteryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="lotteryConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.loto.Properties.Settings.GlobalReference.Default.lotteryConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tickets_for_buyTableAdapter" GeneratorDataComponentClassName="tickets_for_buyTableAdapter" Name="tickets_for_buy" UserDataComponentName="tickets_for_buyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lotteryConnectionString (Settings)" DbObjectName="lottery.dbo.tickets_for_buy" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер билета], Акция, [Дата розыгрыша], Цена, [Множитель выигрыша] FROM dbo.tickets_for_buy</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер билета" DataSetColumn="Номер билета" />
+              <Mapping SourceColumn="Акция" DataSetColumn="Акция" />
+              <Mapping SourceColumn="Дата розыгрыша" DataSetColumn="Дата розыгрыша" />
+              <Mapping SourceColumn="Цена" DataSetColumn="Цена" />
+              <Mapping SourceColumn="Множитель выигрыша" DataSetColumn="Множитель выигрыша" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="lotteryDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="lotteryDataSet5" msprop:Generator_UserDSName="lotteryDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tickets_for_buy" msprop:Generator_TableClassName="tickets_for_buyDataTable" msprop:Generator_TableVarName="tabletickets_for_buy" msprop:Generator_TablePropName="tickets_for_buy" msprop:Generator_RowDeletingName="tickets_for_buyRowDeleting" msprop:Generator_RowChangingName="tickets_for_buyRowChanging" msprop:Generator_RowEvHandlerName="tickets_for_buyRowChangeEventHandler" msprop:Generator_RowDeletedName="tickets_for_buyRowDeleted" msprop:Generator_UserTableName="tickets_for_buy" msprop:Generator_RowChangedName="tickets_for_buyRowChanged" msprop:Generator_RowEvArgName="tickets_for_buyRowChangeEvent" msprop:Generator_RowClassName="tickets_for_buyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_билета" msprop:Generator_ColumnVarNameInTable="columnНомер_билета" msprop:Generator_ColumnPropNameInRow="Номер_билета" msprop:Generator_ColumnPropNameInTable="Номер_билетаColumn" msprop:Generator_UserColumnName="Номер билета" type="xs:int" />
+              <xs:element name="Акция" msprop:Generator_ColumnVarNameInTable="columnАкция" msprop:Generator_ColumnPropNameInRow="Акция" msprop:Generator_ColumnPropNameInTable="АкцияColumn" msprop:Generator_UserColumnName="Акция">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_розыгрыша" msprop:Generator_ColumnVarNameInTable="columnДата_розыгрыша" msprop:Generator_ColumnPropNameInRow="Дата_розыгрыша" msprop:Generator_ColumnPropNameInTable="Дата_розыгрышаColumn" msprop:Generator_UserColumnName="Дата розыгрыша" type="xs:dateTime" />
+              <xs:element name="Цена" msprop:Generator_ColumnVarNameInTable="columnЦена" msprop:Generator_ColumnPropNameInRow="Цена" msprop:Generator_ColumnPropNameInTable="ЦенаColumn" msprop:Generator_UserColumnName="Цена" type="xs:int" />
+              <xs:element name="Множитель_x0020_выигрыша" msprop:Generator_ColumnVarNameInTable="columnМножитель_выигрыша" msprop:Generator_ColumnPropNameInRow="Множитель_выигрыша" msprop:Generator_ColumnPropNameInTable="Множитель_выигрышаColumn" msprop:Generator_UserColumnName="Множитель выигрыша" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="lotteryDataSet2" targetNamespace="http://tempuri.org/lotteryDataSet2.xsd" xmlns:mstns="http://tempuri.org/lotteryDataSet2.xsd" xmlns="http://tempuri.org/lotteryDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="lotteryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="lotteryConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.loto.Properties.Settings.GlobalReference.Default.lotteryConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="all_types_for_adminTableAdapter" GeneratorDataComponentClassName="all_types_for_adminTableAdapter" Name="all_types_for_admin" UserDataComponentName="all_types_for_adminTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lotteryConnectionString (Settings)" DbObjectName="lottery.dbo.all_types_for_admin" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT type_id, type_name, raffle_date, price, x_price FROM dbo.all_types_for_admin</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="type_id" DataSetColumn="type_id" />
+              <Mapping SourceColumn="type_name" DataSetColumn="type_name" />
+              <Mapping SourceColumn="raffle_date" DataSetColumn="raffle_date" />
+              <Mapping SourceColumn="price" DataSetColumn="price" />
+              <Mapping SourceColumn="x_price" DataSetColumn="x_price" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="lotteryDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="lotteryDataSet2" msprop:Generator_UserDSName="lotteryDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="all_types_for_admin" msprop:Generator_TableClassName="all_types_for_adminDataTable" msprop:Generator_TableVarName="tableall_types_for_admin" msprop:Generator_TablePropName="all_types_for_admin" msprop:Generator_RowDeletingName="all_types_for_adminRowDeleting" msprop:Generator_RowChangingName="all_types_for_adminRowChanging" msprop:Generator_RowEvHandlerName="all_types_for_adminRowChangeEventHandler" msprop:Generator_RowDeletedName="all_types_for_adminRowDeleted" msprop:Generator_UserTableName="all_types_for_admin" msprop:Generator_RowChangedName="all_types_for_adminRowChanged" msprop:Generator_RowEvArgName="all_types_for_adminRowChangeEvent" msprop:Generator_RowClassName="all_types_for_adminRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="type_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columntype_id" msprop:Generator_ColumnPropNameInRow="type_id" msprop:Generator_ColumnPropNameInTable="type_idColumn" msprop:Generator_UserColumnName="type_id" type="xs:int" />
+              <xs:element name="type_name" msprop:Generator_ColumnVarNameInTable="columntype_name" msprop:Generator_ColumnPropNameInRow="type_name" msprop:Generator_ColumnPropNameInTable="type_nameColumn" msprop:Generator_UserColumnName="type_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="raffle_date" msprop:Generator_ColumnVarNameInTable="columnraffle_date" msprop:Generator_ColumnPropNameInRow="raffle_date" msprop:Generator_ColumnPropNameInTable="raffle_dateColumn" msprop:Generator_UserColumnName="raffle_date" type="xs:dateTime" />
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:int" />
+              <xs:element name="x_price" msprop:Generator_ColumnVarNameInTable="columnx_price" msprop:Generator_ColumnPropNameInRow="x_price" msprop:Generator_ColumnPropNameInTable="x_priceColumn" msprop:Generator_UserColumnName="x_price" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:all_types_for_admin" />
+      <xs:field xpath="mstns:type_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

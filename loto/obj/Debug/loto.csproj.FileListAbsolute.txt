@@ -1,0 +1,17 @@
+C:\Users\FreeTen\Desktop\loto\loto\bin\Debug\loto.exe.config
+C:\Users\FreeTen\Desktop\loto\loto\bin\Debug\loto.exe
+C:\Users\FreeTen\Desktop\loto\loto\bin\Debug\loto.pdb
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.csprojAssemblyReference.cache
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.Properties.Resources.resources
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.csproj.GenerateResource.cache
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.csproj.CoreCompileInputs.cache
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.exe
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.pdb
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.register_form.resources
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.login_form.resources
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.Main_for_user.resources
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.Main_for_admin.resources
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.add_random.resources
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.add_tickets.resources
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.add_combo.resources
+C:\Users\FreeTen\Desktop\loto\loto\obj\Debug\loto.add_types.resources
